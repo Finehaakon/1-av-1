@@ -13,7 +13,7 @@ def get_cards():
         return jsonify([])
 
     query = f"{player} 1/1"
-    url = "https://www.ebay.com/sch/i.html"
+    url = "https://www.ebay.com/sch/i.html?_nkw=" + query.replace(" ", "+")
     params = {
         "_nkw": query,
         "_sop": "10",
