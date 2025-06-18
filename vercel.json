@@ -1,0 +1,10 @@
+
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/cards.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/cards", "dest": "api/cards.py" }
+  ]
+}
